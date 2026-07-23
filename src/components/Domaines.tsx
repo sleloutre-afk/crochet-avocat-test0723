@@ -42,7 +42,7 @@ export default function Domaines() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-xs uppercase tracking-[0.3em] mb-3" style={{ color: '#8a1535' }}>Domaines d'intervention</p>
-          <h2 className="text-3xl font-light" style={{ fontFamily: 'var(--font-playfair)', color: '#111116' }}>
+          <h2 className="text-3xl font-light" style={{ fontFamily: 'var(--font-raleway)', color: '#111116' }}>
             Un accompagnement ciblé
           </h2>
           <div className="mx-auto mt-5" style={{ width: '40px', height: '1px', background: 'rgba(138,21,53,0.4)' }} />
@@ -58,7 +58,7 @@ export default function Domaines() {
                   style={{ filter: 'brightness(0) invert(1)', opacity: 0.50 }} />
               </div>
               <p className="text-xs uppercase tracking-widest mb-2" style={{ color: 'rgba(138,21,53,0.80)', letterSpacing: '0.12em' }}>Domaine phare</p>
-              <h3 className="text-xl font-light text-white mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>{d.title}</h3>
+              <h3 className="text-xl font-light text-white mb-4" style={{ fontFamily: 'var(--font-raleway)' }}>{d.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: 'rgba(244,241,237,0.48)' }}>{d.text}</p>
             </div>
           ))}
@@ -73,7 +73,7 @@ export default function Domaines() {
                 <Image src={d.icon} alt="" width={36} height={36}
                   style={{ filter: 'brightness(0) saturate(100%) invert(13%) sepia(70%) saturate(1200%) hue-rotate(320deg) brightness(75%) contrast(95%)', opacity: 0.70 }} />
               </div>
-              <h3 className="text-base font-medium mb-3" style={{ fontFamily: 'var(--font-playfair)', color: '#111116' }}>{d.title}</h3>
+              <h3 className="text-base font-medium mb-3" style={{ fontFamily: 'var(--font-raleway)', color: '#111116' }}>{d.title}</h3>
               <p className="text-xs leading-relaxed" style={{ color: '#6a5548' }}>{d.text}</p>
             </div>
           ))}

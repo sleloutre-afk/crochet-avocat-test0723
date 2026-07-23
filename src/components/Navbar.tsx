@@ -24,27 +24,26 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50"
       style={{
-        transition: 'background 0.3s, border-color 0.3s, backdrop-filter 0.3s',
-        background: scrolled ? 'rgba(10,10,14,0.96)' : 'transparent',
+        transition: 'background 0.3s, box-shadow 0.3s, backdrop-filter 0.3s',
+        background: scrolled ? 'rgba(244,241,237,0.97)' : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(138,21,53,0.20)' : '1px solid transparent',
+        boxShadow: scrolled ? '0 1px 24px rgba(17,17,22,0.08)' : 'none',
       }}>
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between" style={{ height: '70px' }}>
-        <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+        <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <Image src="/logo-crochet.png" alt="Charlène Crochet Avocate" width={180} height={60}
-            style={{
-              objectFit: 'contain',
-              height: '52px',
-              width: 'auto',
-              filter: 'drop-shadow(0 0 3px rgba(138,21,53,0.20))',
-            }} />
+            style={{ objectFit: 'contain', height: '52px', width: 'auto', flexShrink: 0 }} />
+          <div className="hidden sm:flex flex-col leading-none" style={{ borderLeft: '1px solid rgba(138,21,53,0.20)', paddingLeft: '0.75rem' }}>
+            <span style={{ fontFamily: 'var(--font-raleway)', fontWeight: 300, fontSize: '0.88rem', color: '#111116', letterSpacing: '0.10em' }}>CHARLÈNE CROCHET</span>
+            <span style={{ fontSize: '0.58rem', color: 'rgba(138,21,53,0.65)', letterSpacing: '0.10em', marginTop: '2px' }}>Avocate · Bordeaux</span>
+          </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-7">
           {NAV_LINKS.map(link => (
             <Link key={link.href} href={link.href}
               className="hover-grenat text-xs uppercase tracking-widest transition-colors duration-200"
-              style={{ color: 'rgba(255,255,255,0.55)', letterSpacing: '0.12em', textDecoration: 'none' }}>
+              style={{ color: 'rgba(17,17,22,0.50)', letterSpacing: '0.12em', textDecoration: 'none' }}>
               {link.label}
             </Link>
           ))}
@@ -58,20 +57,20 @@ export default function Navbar() {
         <button className="md:hidden p-2" onClick={() => setMenuOpen(!menuOpen)}
           style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
           <div style={{ width: '22px', display: 'flex', flexDirection: 'column', gap: '5px' }}>
-            <span style={{ display: 'block', height: '1px', background: menuOpen ? 'transparent' : 'rgba(255,255,255,0.7)' }} />
-            <span style={{ display: 'block', height: '1px', background: 'rgba(255,255,255,0.7)' }} />
-            <span style={{ display: 'block', height: '1px', background: menuOpen ? 'transparent' : 'rgba(255,255,255,0.7)' }} />
+            <span style={{ display: 'block', height: '1px', background: menuOpen ? 'transparent' : 'rgba(17,17,22,0.5)' }} />
+            <span style={{ display: 'block', height: '1px', background: 'rgba(17,17,22,0.5)' }} />
+            <span style={{ display: 'block', height: '1px', background: menuOpen ? 'transparent' : 'rgba(17,17,22,0.5)' }} />
           </div>
         </button>
       </div>
 
       {menuOpen && (
-        <div className="md:hidden px-6 pb-6 pt-2" style={{ background: 'rgba(10,10,14,0.98)' }}>
+        <div className="md:hidden px-6 pb-6 pt-2" style={{ background: 'rgba(244,241,237,0.99)' }}>
           {NAV_LINKS.map(link => (
-            <div key={link.href} style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+            <div key={link.href} style={{ borderBottom: '1px solid rgba(17,17,22,0.06)' }}>
               <Link href={link.href} onClick={() => setMenuOpen(false)}
                 className="block py-3 text-xs uppercase tracking-widest hover-grenat"
-                style={{ color: 'rgba(255,255,255,0.55)', letterSpacing: '0.12em', textDecoration: 'none' }}>
+                style={{ color: 'rgba(17,17,22,0.50)', letterSpacing: '0.12em', textDecoration: 'none' }}>
                 {link.label}
               </Link>
             </div>

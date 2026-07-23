@@ -17,7 +17,7 @@ export default function RessourcesPage() {
         <div className="max-w-6xl mx-auto px-6 pt-36 pb-24">
           <div className="mb-14">
             <p className="text-xs uppercase tracking-[0.3em] mb-3" style={{ color: '#8a1535' }}>Ressources</p>
-            <h1 className="text-3xl font-light" style={{ fontFamily: 'var(--font-playfair)', color: '#111116' }}>
+            <h1 className="text-3xl font-light" style={{ fontFamily: 'var(--font-raleway)', color: '#111116' }}>
               Articles & guides pratiques
             </h1>
             <div className="mt-5" style={{ width: '40px', height: '1px', background: 'rgba(138,21,53,0.4)' }} />
@@ -37,7 +37,7 @@ export default function RessourcesPage() {
                     {article.category}
                   </p>
                   <h2 className="text-base font-light mb-4 group-hover:opacity-70 transition-opacity"
-                    style={{ fontFamily: 'var(--font-playfair)', color: '#111116', lineHeight: 1.45 }}>
+                    style={{ fontFamily: 'var(--font-raleway)', color: '#111116', lineHeight: 1.45 }}>
                     {article.title}
                   </h2>
                   <p className="text-xs leading-relaxed mb-6" style={{ color: '#6a5548' }}>{article.excerpt}</p>

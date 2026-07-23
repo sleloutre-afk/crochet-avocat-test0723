@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, Raleway } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
+const raleway = Raleway({ subsets: ['latin'], weight: ['300', '400', '500'], style: ['normal', 'italic'], variable: '--font-raleway', display: 'swap' })
 const playfair = Playfair_Display({
   subsets: ['latin', 'latin-ext'],
   style: ['normal', 'italic'],
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={`${inter.variable} ${playfair.variable}`} style={{ margin: 0, padding: 0 }}>
+      <body className={`${inter.variable} ${playfair.variable} ${raleway.variable}`} style={{ margin: 0, padding: 0 }}>
         {children}
       </body>
     </html>

@@ -11,14 +11,14 @@ export default function About() {
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(17,17,22,0.45) 0%, transparent 50%)' }} />
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <p className="text-white font-light text-lg" style={{ fontFamily: 'var(--font-playfair)' }}>Maître Charlène Crochet</p>
+              <p className="text-white font-light text-lg" style={{ fontFamily: 'var(--font-raleway)' }}>Maître Charlène Crochet</p>
               <p className="text-xs mt-1" style={{ color: 'rgba(244,241,237,0.65)', letterSpacing: '0.08em' }}>Avocate au Barreau de Bordeaux</p>
             </div>
           </div>
 
           <div>
             <p className="text-xs uppercase tracking-[0.3em] mb-3" style={{ color: '#8a1535' }}>À propos</p>
-            <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-playfair)', color: '#111116' }}>
+            <h2 className="text-3xl font-light mb-6" style={{ fontFamily: 'var(--font-raleway)', color: '#111116' }}>
               Une défense engagée,<br />
               <em style={{ color: '#8a1535' }}>cas par cas</em>
             </h2>

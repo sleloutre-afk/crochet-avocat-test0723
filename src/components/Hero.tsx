@@ -2,35 +2,38 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen text-white overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-screen overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <Image src="/hero.png" alt="Maître Charlène Crochet — Avocate à Bordeaux" fill
           className="object-cover object-center ken-burns" priority />
         <div className="absolute inset-0"
-          style={{ background: 'linear-gradient(160deg, rgba(10,10,14,0.96) 0%, rgba(17,17,22,0.88) 45%, rgba(25,10,14,0.65) 100%)' }} />
+          style={{ background: 'radial-gradient(ellipse at center, rgba(244,241,237,0.88) 0%, rgba(244,241,237,0.72) 55%, rgba(244,241,237,0.45) 100%)' }} />
       </div>
 
       <div className="relative text-center px-6 max-w-3xl mx-auto" style={{ paddingTop: '70px' }}>
-        <div className="flex justify-center mb-10" style={{ marginTop: '40px' }}>
-          <Image src="/logo-crochet.png" alt="Charlène Crochet Avocate" width={500} height={200}
-            style={{
-              objectFit: 'contain',
-              height: '200px',
-              width: 'auto',
-              filter: 'drop-shadow(0 0 6px rgba(138,21,53,0.30))',
-            }} />
+        <div className="flex items-center justify-center gap-8 mb-10" style={{ marginTop: '40px' }}>
+          <Image src="/logo-crochet.png" alt="Charlène Crochet Avocate" width={450} height={180}
+            style={{ objectFit: 'contain', height: '180px', width: 'auto', flexShrink: 0 }} />
+          <div style={{ borderLeft: '1px solid rgba(138,21,53,0.25)', paddingLeft: '2rem', textAlign: 'left' }}>
+            <p style={{ fontFamily: 'var(--font-raleway)', fontWeight: 400, fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', color: '#111116', lineHeight: 1.2, letterSpacing: '0.22em', textTransform: 'uppercase' }}>
+              Charlène Crochet
+            </p>
+            <p className="mt-2" style={{ color: 'rgba(17,17,22,0.45)', letterSpacing: '0.12em', fontSize: '0.8rem' }}>
+              Avocate au Barreau de Bordeaux
+            </p>
+          </div>
         </div>
 
         <div className="flex items-center justify-center gap-4 mb-10">
           <div style={{ width: '48px', height: '1px', background: 'rgba(138,21,53,0.45)' }} />
-          <span className="text-xs" style={{ color: 'rgba(255,255,255,0.38)', letterSpacing: '0.14em' }}>2 Rue Buhan · Bordeaux</span>
+          <span className="text-xs" style={{ color: 'rgba(17,17,22,0.42)', letterSpacing: '0.14em' }}>2 Rue Buhan · Bordeaux</span>
           <div style={{ width: '48px', height: '1px', background: 'rgba(138,21,53,0.45)' }} />
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           {['Droit pénal', 'Droit de la famille', 'Droit des étrangers', 'Droit de la consommation', 'Droit des assurances'].map(d => (
             <span key={d} className="text-xs px-3 py-1.5"
-              style={{ border: '1px solid rgba(138,21,53,0.28)', color: 'rgba(255,255,255,0.48)', letterSpacing: '0.05em' }}>
+              style={{ border: '1px solid rgba(138,21,53,0.50)', color: 'rgba(17,17,22,0.65)', background: 'rgba(244,241,237,0.55)', letterSpacing: '0.05em' }}>
               {d}
             </span>
           ))}
@@ -44,7 +47,7 @@ export default function Hero() {
           </a>
           <a href="mailto:charlene.crochet.avocat@gmail.com"
             className="cta-ghost flex items-center gap-3 px-6 py-4 text-sm w-full sm:w-auto justify-center"
-            style={{ border: '1px solid rgba(138,21,53,0.28)', color: 'rgba(255,255,255,0.55)', letterSpacing: '0.06em' }}>
+            style={{ border: '1px solid rgba(17,17,22,0.18)', color: 'rgba(17,17,22,0.55)', letterSpacing: '0.06em' }}>
             Écrire à Maître Crochet
           </a>
         </div>

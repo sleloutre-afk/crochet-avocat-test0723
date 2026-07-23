@@ -13,6 +13,7 @@
 
   --font-inter: var(--font-inter);
   --font-playfair: var(--font-playfair);
+  --font-raleway: var(--font-raleway);
 }
 
 *, *::before, *::after { box-sizing: border-box; }

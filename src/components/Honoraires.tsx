@@ -22,7 +22,7 @@ export default function Honoraires() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-xs uppercase tracking-[0.3em] mb-3" style={{ color: '#8a1535' }}>Honoraires</p>
-          <h2 className="text-3xl font-light" style={{ fontFamily: 'var(--font-playfair)', color: '#111116' }}>
+          <h2 className="text-3xl font-light" style={{ fontFamily: 'var(--font-raleway)', color: '#111116' }}>
             Des honoraires clairs dès le départ
           </h2>
           <div className="mx-auto mt-5" style={{ width: '40px', height: '1px', background: 'rgba(138,21,53,0.4)' }} />
@@ -38,7 +38,7 @@ export default function Honoraires() {
               <div className="mb-1 text-xs uppercase tracking-widest" style={{ color: 'rgba(138,21,53,0.65)', letterSpacing: '0.12em' }}>
                 {`0${i + 1}`}
               </div>
-              <h3 className="text-base font-light mb-4 mt-3" style={{ fontFamily: 'var(--font-playfair)', color: '#111116' }}>
+              <h3 className="text-base font-light mb-4 mt-3" style={{ fontFamily: 'var(--font-raleway)', color: '#111116' }}>
                 {mode.titre}
               </h3>
               <p className="text-sm leading-relaxed mb-5" style={{ color: '#6a5548' }}>{mode.desc}</p>

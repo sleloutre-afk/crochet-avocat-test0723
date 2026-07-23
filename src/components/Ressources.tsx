@@ -9,7 +9,7 @@ export default function Ressources() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] mb-3" style={{ color: '#8a1535' }}>Ressources</p>
-            <h2 className="text-3xl font-light" style={{ fontFamily: 'var(--font-playfair)', color: '#111116' }}>
+            <h2 className="text-3xl font-light" style={{ fontFamily: 'var(--font-raleway)', color: '#111116' }}>
               Articles & guides pratiques
             </h2>
           </div>
@@ -30,7 +30,7 @@ export default function Ressources() {
                   {article.category}
                 </p>
                 <h3 className="text-base font-light mb-4 group-hover:opacity-70 transition-opacity"
-                  style={{ fontFamily: 'var(--font-playfair)', color: '#111116', lineHeight: 1.45 }}>
+                  style={{ fontFamily: 'var(--font-raleway)', color: '#111116', lineHeight: 1.45 }}>
                   {article.title}
                 </h3>
                 <p className="text-xs leading-relaxed mb-6" style={{ color: '#6a5548' }}>{article.excerpt}</p>

@@ -12,7 +12,7 @@ export default function StatsBar() {
           {stats.map((s, i) => (
             <div key={i} className="py-8 px-4 text-center"
               style={{ borderRight: i < 3 ? '1px solid rgba(138,21,53,0.12)' : 'none' }}>
-              <p className="text-xl font-light mb-1" style={{ fontFamily: 'var(--font-playfair)', color: '#8a1535' }}>{s.value}</p>
+              <p className="text-xl font-light mb-1" style={{ fontFamily: 'var(--font-raleway)', color: '#8a1535' }}>{s.value}</p>
               <p className="text-xs leading-tight" style={{ color: 'rgba(244,241,237,0.38)', letterSpacing: '0.04em' }}>{s.label}</p>
             </div>
           ))}
