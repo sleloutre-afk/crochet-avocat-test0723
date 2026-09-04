@@ -28,7 +28,7 @@ export default function About() {
               Maître Charlène Crochet exerce au Barreau de Bordeaux depuis sa prestation de serment en décembre 2021. Formée au droit pénal à l'Université de Bordeaux et à l'École des Avocats Alienor, elle a construit son expertise au sein de plusieurs cabinets bordelais avant d'ouvrir son propre cabinet.
             </p>
             <p className="text-sm leading-relaxed mb-8" style={{ color: '#6a5548' }}>
-              Son engagement s'articule autour de deux convictions : en matière pénale, chaque personne mise en cause mérite une défense exigeante, quel que soit le contexte ; en droit de la famille, chaque situation familiale requiert une écoute attentive et des solutions qui préservent l'essentiel.
+              Son cabinet est structuré autour de deux axes exclusifs. En droit pénal, elle intervient tant aux côtés des victimes qu'en défense des personnes mises en cause — de la garde à vue jusqu'à l'exécution de la peine, en passant par l'instruction et les audiences. En droit de la famille, elle accompagne les situations de séparation et leurs conséquences : divorce amiable ou contentieux, autorité parentale, résidence des enfants, pension alimentaire et prestation compensatoire.
             </p>
 
             <div className="mb-8 pt-6" style={{ borderTop: '1px solid rgba(138,21,53,0.12)' }}>

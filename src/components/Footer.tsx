@@ -58,9 +58,21 @@ export default function Footer() {
           <p className="text-xs" style={{ color: 'rgba(244,241,237,0.45)', letterSpacing: '0.04em' }}>
             &copy; {new Date().getFullYear()} Maître Charlène Crochet. Tous droits réservés.
           </p>
-          <p className="text-xs" style={{ color: 'rgba(244,241,237,0.40)' }}>
-            Barreau de Bordeaux · N° 1317 · Aide juridictionnelle acceptée
-          </p>
+          <div className="flex items-center gap-6">
+            <p className="text-xs" style={{ color: 'rgba(244,241,237,0.40)' }}>
+              Barreau de Bordeaux · N° 1317 · Aide juridictionnelle acceptée
+            </p>
+            <div className="flex gap-4">
+              <Link href="/mentions-legales" className="text-xs hover:opacity-70 transition-opacity"
+                style={{ color: 'rgba(244,241,237,0.40)', textDecoration: 'none' }}>
+                Mentions légales
+              </Link>
+              <Link href="/cgv" className="text-xs hover:opacity-70 transition-opacity"
+                style={{ color: 'rgba(244,241,237,0.40)', textDecoration: 'none' }}>
+                CGV
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
