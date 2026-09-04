@@ -31,7 +31,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {['Droit pénal', 'Droit de la famille', 'Droit des étrangers', 'Droit de la consommation', 'Droit des assurances'].map(d => (
+          {['Droit pénal', 'Droit de la famille'].map(d => (
             <span key={d} className="text-xs px-3 py-1.5"
               style={{ border: '1px solid rgba(138,21,53,0.50)', color: 'rgba(17,17,22,0.65)', background: 'rgba(244,241,237,0.55)', letterSpacing: '0.05em' }}>
               {d}
